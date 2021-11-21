@@ -71,5 +71,20 @@ namespace tp2
             }
             return false;
         }
+        /// <summary>
+        /// determine si 3 points sont allignes
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
+        public bool alignés(Point p1, Point p2)
+        {
+            Point pp1 = new Point(p1.x-this.x, p1.y - this.y, p1.z - this.z);
+            Point pp2 = new Point(p2.x-this.x, p2.y - this.y, p2.z - this.z);
+            double k1 = pp1.x / pp2.x;
+            double k2 = pp1.y / pp2.y;
+            double k3 = pp1.z / pp2.z;
+            return (k1 == k2 && k1 == k3 && k2 == k3);
+        }
     }
 }
