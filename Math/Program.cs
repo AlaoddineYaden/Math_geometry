@@ -8,7 +8,7 @@ namespace tp2
         {
             Point p = new Point(2,3,4);
             Point p2 = new Point(4,6,8);
-            Point p3 = new Point(4,6,16);
+            Point p3 = new Point(4,6,8);
 
             Droite t = new Droite(p,p2);
             Droite t1 = new Droite(p,new Point(4,6,8));
