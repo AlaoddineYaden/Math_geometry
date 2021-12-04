@@ -7,9 +7,10 @@ namespace tp2
 
     class Droite
     {
-        public Point p1;
-        public Point p2;
-        Point vect;
+        public Point p1 { get; set; }
+        public Point p2 { get; set; }
+        public Point vect { get; set; }
+        
         /// <summary>
         /// constructeur du droite  avec deux points
         /// </summary>
@@ -43,7 +44,6 @@ namespace tp2
         /// <returns></returns>
         public bool paralelle(Droite t)
         {
-            
             double k1 = (this.p1.x - this.p2.x)/vect.x;
             double k2 = (this.p1.y - this.p2.y)/vect.y;
             double k3 = (this.p1.z - this.p2.z)/vect.z;

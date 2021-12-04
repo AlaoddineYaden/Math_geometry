@@ -7,9 +7,9 @@ namespace tp2
     
     class Ellipse
     {
-        public double longueur;
-        public double largeur;
-        public Point centre;
+        public double longueur { get; set; }
+        public double largeur { get; set; }
+        public Point centre { get; set; }
         /// <summary>
         /// constructeur d'un ellipse
         /// </summary>
@@ -18,7 +18,6 @@ namespace tp2
         /// <param name="largeur"></param>
         public Ellipse(Point centre, double longueur, double largeur)
         {
-            
             this.centre = centre;
             this.longueur = longueur;
             this.largeur = largeur;

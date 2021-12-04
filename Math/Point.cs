@@ -6,9 +6,10 @@ namespace tp2
 {
     class Point
     {
-        public double x;
-        public double y;
-        public double z;
+        
+        public double x { get; set; }
+        public double y { get; set; }
+        public double z { get; set; }
         /// <summary>
         /// constructeur pour le point
         /// </summary>
